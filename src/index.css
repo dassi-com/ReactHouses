@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.image1{
+    background-image: url(assets/donate4.jpg);
+    width: 100%;
+    background-size: cover;
+}
+
+
+
+
+
+  
+
+
+
