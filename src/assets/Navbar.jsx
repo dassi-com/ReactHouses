@@ -1,5 +1,6 @@
-// import React from "react";
+import { Link } from "react-router-dom";
 import { useState } from "react"
+import logo from "../assets/images/logo2.png"
 import '../style/Navbar.css'
 
 
@@ -14,20 +15,20 @@ function Navbar() {
 
   return (
         <div>
-          <div className="bg-pink-50 py-4 sticky top-0">
-              <div className="container mx-auto py-6 px-24">
+          <div className="bg-black  fixed top-0 left-0 w-full shadow-md z-50">
+              <div className="container mx-auto py-2 px-24">
                   <div className="nav-bar">
 
                       <div className="logo-section">
-                          <h1 className="text-pink-800  font-bold">QUATER</h1>
+                          <img src={logo} alt=""  width="200px" />
                       </div>
                       <div className="font-semibold">
                           <div className="links-one pt-4">
                               <nav id={links ? 'open' : 'close'}>
-                                  <a to="/" className="text-white p-2 text-xl hover:text-blue-600 cursor-pointer">Home</a>
-                                  <a to="/About" className="text-white p-2 text-xl hover:text-blue-600 cursor-pointer">About</a>
-                                  <a to="/Services" className="text-white p-2 text-xl hover:text-blue-600  cursor-pointer">Services</a>
-                                  <a to="/Contact" className="text-white p-2 text-xl hover:text-blue-600  cursor-pointer">Contact</a>
+                                  <Link to="/" className="text-white p-2 text-xl hover:text-blue-600 cursor-pointer">Home</Link>
+                                  <Link to="/Aboutus" className="text-white p-2 text-xl hover:text-blue-600 cursor-pointer">About Us</Link>
+                                  <Link to="/Services" className="text-white p-2 text-xl hover:text-blue-600  cursor-pointer">Services</Link>
+                                  <Link to="/Contact" className="text-white p-2 text-xl hover:text-blue-600  cursor-pointer">Contact</Link>
                                   <h1 className="text-white cursor-pointer absolute top-10 right-10 " onClick={updateLinks}>X</h1>
                               </nav>
                           </div>
@@ -36,16 +37,16 @@ function Navbar() {
 
 
                       <div className="links-two">
-                          <nav className=" text-pink-800">
-                              <a to="/" className="p-2 text-xl hover:text-blue-600  cursor-pointer">Home</a>
-                              <a to="/About" className=" p-2 text-xl hover:text-blue-600  cursor-pointer">About</a>
-                              <a to="/Services" className=" p-2 text-xl hover:text-blue-600  cursor-pointer">Services</a>
-                              <a to="/Contact" className=" p-2 text-xl hover:text-blue-600  cursor-pointer">Contact</a>
+                          <nav className=" text-white">
+                              <Link to="/" className="p-2 text-xl hover:text-blue-600  cursor-pointer">Home</Link>
+                              <Link to="/Aboutus" className=" p-2 text-xl hover:text-blue-600  cursor-pointer">About Us</Link>
+                              <Link to="/Services" className=" p-2 text-xl hover:text-blue-600  cursor-pointer">Services</Link>
+                              <Link to="/Contact" className=" p-2 text-xl hover:text-blue-600  cursor-pointer">Contact</Link>
                           </nav>
                       </div>
 
                       <div className="open-close">
-                          <button onClick={updateLinks} className="text-blue-950 text-2xl font-bold pt-2">Menu</button>
+                          <button onClick={updateLinks} className="text-white text-xl font-bold pt-2">Menu</button>
                       </div>
 
 
