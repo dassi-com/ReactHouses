@@ -1,7 +1,4 @@
 import { Link } from "react-router-dom"
-// import icon from "./images/icon.png"
-// import icon2 from "./images/icon2.png"
-// import icon3 from "./images/icon3.png"
 import ContactForm from "./ContactForm"
 
 function Contact(){
@@ -29,44 +26,7 @@ function Contact(){
                 </div>
             </div>
 
-            {/*Our to contact us*/}
-            {/* <div className="container mx-auto p-20">
-                   <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
-                        <div className="content p-10 border-2 border-gray-300">
-                              <div className=" flex justify-center">
-                                   <img src={icon} alt="" width="100px" />
-                              </div>
-                              <div className="description py-5  text-center text-gray-600 font-semibold leading-10 text-xl">
-                                  <p className="text-3xl py-4">Email Address</p>
-                                  <p>info@webmail.com</p>
-                                  <p>jobs@webexample.com</p>
-                              </div>
-                        </div>
-
-                                                <div className="content p-10 border-2 border-gray-300">
-                              <div className=" flex justify-center">
-                                   <img src={icon2} alt="" width="100px" />
-                              </div>
-                              <div className="description py-5  text-center text-gray-600 font-semibold leading-10 text-xl">
-                                  <p className="text-3xl py-4">Phone Number</p>
-                                  <p>+0123-456789</p>
-                                  <p>+987-6543210</p>
-                              </div>
-                        </div>
-
-                                                <div className="content p-10 border-2 border-gray-300">
-                              <div className=" flex justify-center">
-                                   <img src={icon3} alt="" width="100px" />
-                              </div>
-                              <div className="description py-5  text-center text-gray-600 font-semibold leading-10 text-xl">
-                                  <p className="text-3xl py-4">Office Address</p>
-                                  <p>18/A, New Born Town Hall</p>
-                                  <p>New York, US</p>
-                              </div>
-                        </div>
-
-                   </div>
-            </div> */}
+      
 
             <ContactForm />
         </div>

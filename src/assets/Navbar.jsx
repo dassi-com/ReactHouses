@@ -26,7 +26,7 @@ function Navbar() {
                           <div className="links-one pt-4">
                               <nav id={links ? 'open' : 'close'}>
                                   <Link to="/" className="text-white p-2 text-xl hover:text-blue-600 cursor-pointer">Home</Link>
-                                  <Link to="/Aboutus" className="text-white p-2 text-xl hover:text-blue-600 cursor-pointer">About Us</Link>
+                                  <Link to="/Aboutus" cla ssName="text-white p-2 text-xl hover:text-blue-600 cursor-pointer">About Us</Link>
                                   <Link to="/Services" className="text-white p-2 text-xl hover:text-blue-600  cursor-pointer">Services</Link>
                                   <Link to="/Contact" className="text-white p-2 text-xl hover:text-blue-600  cursor-pointer">Contact</Link>
                                   <h1 className="text-white cursor-pointer absolute top-10 right-10 " onClick={updateLinks}>X</h1>

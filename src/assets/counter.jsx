@@ -14,7 +14,7 @@ const CounterItem = ({ target, label }) => {
           }
           return prev + 1;
         });
-      }, 10); // vitesse   b
+      }, 10); 
     }
     return () => clearInterval(timer);
   }, [count, target]);
